@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div class="nebula-bg"></div>
+    <div class="code-stream-bg" id="codeStream"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <header class="floating-header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hakkimda" class="holo-link"><i class="fa-solid fa-user-astronaut"></i> Hakkımda</a></li>
+                <li><a href="#yetenekler" class="holo-link"><i class="fa-solid fa-layer-group"></i> Yetenekler & Eğitim</a></li>
+                <li><a href="#projeler" class="holo-link"><i class="fa-solid fa-diagram-project"></i> Projeler</a></li>
+                <li><a href="#iletisim" class="holo-link"><i class="fa-solid fa-satellite-dish"></i> İletişim</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-switch">
+                <i class="fa-solid fa-star spin-star"></i> <span class="theme-text">ModDeğiştir</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hakkimda" class="section-container">
+            <div class="about-content float-delay-1">
+                <div class="profile-frame">
+                    <img src="profil-foto.jpg" alt="Profile" class="profile-pic">
+                    <div class="orbital-ring"></div>
+                </div>
+                <div class="bio-text">
+                    <h1 id="typewriter"></h1>
+                    <p class="subtitle">Sınırsız potansiyel.</p>
+                </div>
+            </div>
+            <div class="floating-panels">
+                <div class="panel float-delay-2 glass-card">
+                    <h3><i class="fa-solid fa-rocket"></i> Kariyer Hedeflerim</h3>
+                    <p>Yenilikçi teknolojiler geliştirerek web deneyimleri yaratmak.</p>
+                </div>
+                <div class="panel float-delay-3 glass-card">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Eğitim Geçmişi</h3>
+                    <p>Bilgisayar Programcılığı - 2. Sınıf</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="yetenekler" class="section-container">
+            <h2 class="section-title">Yetenekler & Eğitim</h2>
+            <div class="skills-container">
+                <div class="skills-list float-delay-1">
+                    <div class="skill-bar-wrapper">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar glass-track"><div class="skill-fill glow-html" style="width: 60%;"></div></div>
+                        <span class="skill-level">60%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar glass-track"><div class="skill-fill glow-js" style="width: 45%;"></div></div>
+                        <span class="skill-level">45%</span>
+                    </div>
+
+                </div>
+                <div class="education-scroll glass-card float-delay-2">
+                    <i class="fa-solid fa-scroll icon-scroll"></i>
+                    <h3>Eğitim Serüveni</h3>
+                    <ul>
+                        <li><span class="year">2024 - 2026</span><br>Bilgisayar Programcılığı Önlisans</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeler" class="section-container">
+            <h2 class="section-title">Projeler</h2>
+            <div class="filter-controls float-delay-1">
+                <button class="glass-btn filter-btn active" data-filter="all">Tümü</button>
+                <button class="glass-btn filter-btn" data-filter="web">Web Projeleri</button>
+                <button class="glass-btn filter-btn" data-filter="mobile">Mobil Projeleri</button>
+            </div>
+            <div class="projects-cluster" id="projectContainer"></div>
+        </section>
+    </main>
+
+    <footer id="iletisim" class="section-container float-delay-3">
+        <div class="contact-cluster">
+            <a href="mailto:yusufakda09@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/yusufakda11" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/_yusufakda/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="sign-board">
+            <p class="glowing-sign">Vize Ek Ödevi: GitHub Üzerinden Portfolyo</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
